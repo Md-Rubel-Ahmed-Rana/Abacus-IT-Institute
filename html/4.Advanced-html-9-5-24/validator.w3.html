@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessibility Example</title>
+    <style>
+      /* CSS styles can be placed here for styling the HTML */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+      main {
+        padding: 20px;
+      }
+      article {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      aside {
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      form {
+        margin-top: 20px;
+        text-align: center;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+      button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header section with a title and navigation -->
+    <header>
+      <h1>Accessibility Example</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+      <!-- First article with semantic HTML -->
+      <article>
+        <h2>Post Title 1</h2>
+        <p>
+          This is the first post content. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua.
+        </p>
+        <p>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <a href="#">Read more</a>
+      </article>
+
+      <!-- Second article with semantic HTML -->
+      <article>
+        <h2>Post Title 2</h2>
+        <p>
+          This is the second post content. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </p>
+        <p>
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum.
+        </p>
+        <a href="#">Read more</a>
+      </article>
+    </main>
+
+    <!-- Aside section with additional content -->
+    <aside>
+      <h3>About Me</h3>
+      <p>
+        Welcome to my blog! I'm passionate about sharing my thoughts and
+        experiences with you.
+      </p>
+    </aside>
+
+    <!-- Footer section with copyright information -->
+    <footer>
+      <p>&copy; 2024 Accessibility Example. All rights reserved.</p>
+    </footer>
+
+    <!-- Form for contacting the blog owner with accessibility features -->
+    <form>
+      <h3>Contact Me</h3>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required aria-label="Name" />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required aria-label="Email" />
+      <label for="message">Message:</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        required
+        aria-label="Message"
+      ></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

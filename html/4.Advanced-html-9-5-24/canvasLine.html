@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Example</title>
+    <style>
+      /* CSS styles can be added here */
+      /* For now, we don't need any specific styles */
+    </style>
+  </head>
+  <body>
+    <!-- The canvas element is used to draw graphics using JavaScript -->
+    <canvas
+      id="myCanvas"
+      width="200"
+      height="100"
+      style="border: 1px solid #d3d3d3"
+    >
+      Your browser does not support the HTML canvas tag.
+    </canvas>
+
+    <script>
+      // JavaScript code for drawing on the canvas
+      // Get the canvas element
+      var canvas = document.getElementById("myCanvas");
+
+      // Check if the browser supports canvas rendering
+      if (canvas.getContext) {
+        // If supported, get the 2D rendering context
+        var ctx = canvas.getContext("2d");
+
+        // Begin drawing path
+        ctx.beginPath();
+
+        // Move the pen to the specified point
+        ctx.moveTo(0, 0);
+
+        // Draw a line from the current position to the specified position
+        ctx.lineTo(200, 100);
+
+        // Stroke the path to display it
+        ctx.stroke();
+      } else {
+        // Fallback content if the browser doesn't support canvas
+        // This could be text, images, or other HTML elements
+        canvas.innerHTML = "Your browser does not support the HTML canvas tag.";
+      }
+    </script>
+  </body>
+</html>

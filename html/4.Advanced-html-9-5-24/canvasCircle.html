@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Drawing</title>
+    <style>
+      /* CSS styles can be added here */
+      /* For now, we don't need any specific styles */
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to our Canvas Drawing Demo</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Main content of the page -->
+      <!-- Canvas Element: The canvas element is used to draw graphics using JavaScript. -->
+      <!-- It has an id of "myCanvas" and dimensions of 200x100 pixels. -->
+      <canvas
+        id="myCanvas"
+        width="200"
+        height="100"
+        style="border: 1px solid #d3d3d3"
+      >
+        Your browser does not support the HTML canvas tag.
+      </canvas>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Canvas Drawing Demo. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // JavaScript code for drawing on the canvas
+      // Get the canvas element by its id
+      var canvas = document.getElementById("myCanvas");
+
+      // Get the 2D rendering context of the canvas
+      var ctx = canvas.getContext("2d");
+
+      // Begin drawing path
+      ctx.beginPath();
+
+      // Arc Drawing: Draw an arc centered at (95, 50) with a radius of 40 pixels.
+      // The arc starts at 0 radians and ends at 2π radians (full circle).
+      ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+
+      // Stroke the path to display the arc
+      ctx.stroke();
+    </script>
+  </body>
+</html>
