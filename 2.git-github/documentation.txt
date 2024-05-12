@@ -1,0 +1,24 @@
+1. What is Git and Github?
+2. Are Git and Github same/equal?
+
+3. git installation:
+    1. download the git tool of "Standalone Installer"
+        1. 32-bit Git for Windows Setup.
+        or
+        2. 64-bit Git for Windows Setup.
+
+4. git configuration
+    1. check git version: git --version or git -v
+    1. setup username: git config --global user.name "User name here"
+    2. setup username: git config --global user.email "User email here"
+    3. check configuration: git config --list
+    4. check username: git config user.name
+    5. check username: git config user.email
+
+5. create Github account and configure everything on cloud
+
+6. configure git on local
+
+7. connect Github cloud with Local computer
+
+8. continue using Git and Github

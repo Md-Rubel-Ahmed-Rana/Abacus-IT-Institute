@@ -1,0 +1,7 @@
+Class 1: Fundamentals of CSS
+
+1. Introduction to CSS
+2. CSS Syntax and Selectors
+3. CSS Box Model (Margin, Border, Padding, Content)
+4. CSS Display Property
+5. CSS Positioning (Static, Relative, Absolute, Fixed)
