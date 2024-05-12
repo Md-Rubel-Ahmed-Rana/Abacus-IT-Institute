@@ -1,0 +1,46 @@
+ /* selectors  */
+/*  1. by tag name
+    2. by class name 
+    3. by id 
+ */
+
+/* color, font-size, background-color  called property */
+/* blue, 30px, red,   called value */
+
+body{
+    margin: 0%;
+    padding: 0;
+}
+
+
+nav{
+    background-color: blue;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+input{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button{
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: yellow;
+}

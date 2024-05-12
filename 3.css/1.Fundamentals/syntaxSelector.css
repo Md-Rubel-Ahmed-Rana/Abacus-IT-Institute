@@ -1,0 +1,51 @@
+ /* selectors  */
+/*  1. by tag name
+    2. by class name 
+    3. by id 
+    4. by attribute
+ */
+
+/* color, font-size, background-color  called property */
+/* blue, 30px, red,   called value */
+
+body{
+    margin: 0%;
+    padding: 0;
+}
+
+
+h1 {
+    color: blue;
+    font-size: 30px;
+    background-color: red;
+    margin: 50px 10px;
+    padding-left: 70px;
+}
+
+/* style h1 by it's class name  */
+
+/* style h1 by it's id   */
+#welcome-text{
+    color: green;
+    content: "Content changed";
+}
+
+.heading1 {
+    color: white;
+  
+}
+
+li {
+    color: white;
+    font-size: 20px;
+    background-color: blue;
+}
+
+button{
+    background-color: green;
+    
+}
+
+input{
+    padding: 10px;
+}
