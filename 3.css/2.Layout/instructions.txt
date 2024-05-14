@@ -1,0 +1,4 @@
+Class 2: Layout and Design Techniques
+
+1. CSS Flexbox Layout
+2. CSS Grid Layout

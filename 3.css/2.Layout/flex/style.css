@@ -1,0 +1,124 @@
+ /* selectors  */
+/*  1. by tag name
+    2. by class name 
+    3. by id 
+ */
+
+/* color, font-size, background-color  called property */
+/* blue, 30px, red,   called value */
+
+ /* header section start  */
+body{
+    margin: 0%;
+    padding: 0;
+}
+
+
+nav{
+    background-color: blue;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+input{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button{
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: yellow;
+}
+
+ /* header section end  */
+
+ /* card section start  */
+ #card-section{
+    background-color: rgb(221, 211, 211);
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+ }
+
+ .card{
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
+ .card-image{
+   display: flex;
+   justify-content: center;
+ }
+
+.card-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+
+  .card-content h3, h5{
+    text-align: center;
+    margin: 0%;
+  }
+
+  .card-content h3{
+    font-size: 24px;
+    color: rgb(67, 76, 85);
+    margin-bottom: 5px;
+  }
+
+  .card-content h5, p{
+    color: rgb(100, 107, 114);;
+  }
+
+  .card-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .card-buttons button{
+    background-color: blue;
+    width: 100%;
+    color: white;
+    padding: 10px 0px;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+
+ .card-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } 
+  
+  .card-links a {
+    font-weight: 600;
+    font-family: arial;
+  }
+
+ /* card section end  */
