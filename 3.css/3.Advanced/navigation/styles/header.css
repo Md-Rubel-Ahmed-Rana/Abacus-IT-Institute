@@ -1,0 +1,25 @@
+header{
+    background-color: rebeccapurple;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+    background-image: url("../images/image1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* center the h2 tag using flex box  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* center the h2 tag using position  */
+    /* position: relative; */
+
+}
+/* 
+header h2{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+} */

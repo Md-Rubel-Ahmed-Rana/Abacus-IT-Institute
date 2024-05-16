@@ -1,0 +1,18 @@
+ nav {
+     background-color: #333;
+     color: #fff;
+     padding: 10px 0;
+     text-align: center;
+     position: sticky;
+     top: 0%;
+ }
+
+ nav ul {
+     list-style-type: none;
+     padding: 0;
+ }
+
+ nav ul li {
+     display: inline;
+     margin: 0 10px;
+ }
