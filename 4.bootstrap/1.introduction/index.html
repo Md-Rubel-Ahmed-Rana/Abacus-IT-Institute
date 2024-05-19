@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Introduction to Bootstrap!</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="bg-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="p-3">
+      <section>
+        <h2>Bootstrap Text Alignment</h2>
+        <p class="text-start">Start aligned text on all viewport sizes.</p>
+        <p class="text-center">Center aligned text on all viewport sizes.</p>
+        <p class="text-end">End aligned text on all viewport sizes.</p>
+
+        <p class="text-sm-start">
+          Start aligned text on viewports sized SM (small) or wider.
+        </p>
+        <p class="text-md-start">
+          Start aligned text on viewports sized MD (medium) or wider.
+        </p>
+        <p class="text-lg-start">
+          Start aligned text on viewports sized LG (large) or wider.
+        </p>
+        <p class="text-xl-start">
+          Start aligned text on viewports sized XL (extra-large) or wider.
+        </p>
+      </section>
+      <section>
+        <h2>Bootstrap Vertical Align</h2>
+        <table style="height: 100px">
+          <tbody>
+            <tr>
+              <td class="align-baseline">baseline</td>
+              <td class="align-top">top</td>
+              <td class="align-middle">middle</td>
+              <td class="align-bottom">bottom</td>
+              <td class="align-text-top">text-top</td>
+              <td class="align-text-bottom">text-bottom</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Bootstrap Colors</h2>
+        <p class="text-primary">.text-primary</p>
+        <p class="text-secondary">.text-secondary</p>
+        <p class="text-success">.text-success</p>
+        <p class="text-danger">.text-danger</p>
+        <p class="text-warning bg-dark">.text-warning</p>
+        <p class="text-info bg-dark">.text-info</p>
+        <p class="text-light bg-dark">.text-light</p>
+        <p class="text-dark">.text-dark</p>
+        <p class="text-body">.text-body</p>
+        <p class="text-muted">.text-muted</p>
+        <p class="text-white bg-dark">.text-white</p>
+        <p class="text-black-50">.text-black-50</p>
+        <p class="text-white-50 bg-dark">.text-white-50</p>
+      </section>
+      <section>
+        <h2>Bootstrap Background Colors</h2>
+        <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+        <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+        <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+        <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+        <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+        <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+        <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+        <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+        <div class="p-3 mb-2 bg-body text-dark">.bg-body</div>
+        <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+        <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+      </section>
+      <section>
+        <h2>Bootstrap Borders</h2>
+        <span class="border"></span>
+        <span class="border-top"></span>
+        <span class="border-end"></span>
+        <span class="border-bottom"></span>
+        <span class="border-start"></span>
+      </section>
+      <section>
+        <h2>Bootstrap Display</h2>
+        <div class="d-inline p-2 bg-primary text-white">d-inline</div>
+        <div class="d-inline p-2 bg-dark text-white">d-inline</div>
+        <hr />
+        <span class="d-block p-2 bg-primary text-white">d-block</span>
+        <span class="d-block p-2 bg-dark text-white">d-block</span>
+      </section>
+      <section>
+        <h2>Bootstrap Flex</h2>
+        <div class="d-flex flex-row bd-highlight mb-3">
+          <div class="p-2 bd-highlight">Flex item 1</div>
+          <div class="p-2 bd-highlight">Flex item 2</div>
+          <div class="p-2 bd-highlight">Flex item 3</div>
+        </div>
+        <div class="d-flex flex-row-reverse bd-highlight">
+          <div class="p-2 bd-highlight">Flex item 1</div>
+          <div class="p-2 bd-highlight">Flex item 2</div>
+          <div class="p-2 bd-highlight">Flex item 3</div>
+        </div>
+      </section>
+      <section>
+        <h2>Bootstrap Grid</h2>
+        <div class="d-grid gap-3">
+          <div class="p-2 bg-light border">Grid item 1</div>
+          <div class="p-2 bg-light border">Grid item 2</div>
+          <div class="p-2 bg-light border">Grid item 3</div>
+        </div>
+      </section>
+      <section>
+        <h2>Bootstrap Overflow</h2>
+        <div class="overflow-auto">...</div>
+        <div class="overflow-hidden">...</div>
+        <div class="overflow-visible">...</div>
+        <div class="overflow-scroll">...</div>
+      </section>
+      <section>
+        <h2>Bootstrap Positioning</h2>
+        <div class="position-static">...</div>
+        <div class="position-relative">...</div>
+        <div class="position-absolute">...</div>
+        <div class="position-fixed">...</div>
+        <div class="position-sticky">...</div>
+      </section>
+      <section>
+        <h2>Bootstrap Shadows</h2>
+        <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+        <div class="shadow-sm p-3 mb-5 bg-body rounded">Small shadow</div>
+        <div class="shadow p-3 mb-5 bg-body rounded">Regular shadow</div>
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">Larger shadow</div>
+      </section>
+      <section>
+        <h2>Bootstrap Sizing</h2>
+        <div class="w-25 p-3" style="background-color: #eee">Width 25%</div>
+        <div class="w-50 p-3" style="background-color: #eee">Width 50%</div>
+        <div class="w-75 p-3" style="background-color: #eee">Width 75%</div>
+        <div class="w-100 p-3" style="background-color: #eee">Width 100%</div>
+        <div class="w-auto p-3" style="background-color: #eee">Width auto</div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
