@@ -1,0 +1,70 @@
+### Week 1: Fundamentals of JavaScript
+
+**Class 1: Introduction to JavaScript**
+- Overview of JavaScript: History, Uses, and Integration in HTML
+- Setting Up the Development Environment (VS Code, Browser Console)
+- Writing and Executing Basic JavaScript Code
+- Variables and Data Types (String, Number, Boolean, Null, Undefined)
+
+**Class 2: Operators and Control Structures**
+- Operators: Arithmetic, Assignment, Comparison, Logical
+- Control Structures: `if`, `else`, `else if`, `switch`
+- Loops: `for`, `while`, `do while`
+
+**Class 3: Functions and Scope**
+- Defining and Calling Functions
+- Parameters and Return Values
+- Function Expressions and Arrow Functions
+- Scope: Local vs. Global
+- Closures
+
+### Week 2: DOM and Web API
+
+**Class 4: Introduction to the DOM**
+- What is the DOM?
+- Selecting Elements: `getElementById`, `getElementsByClassName`, `querySelector`, `querySelectorAll`
+- Manipulating Elements: `innerHTML`, `textContent`, `style`
+
+**Class 5: Events and Event Handling**
+- Adding Event Listeners: `addEventListener`
+- Common Events: `click`, `mouseover`, `mouseout`, `keydown`, `keyup`
+- Event Object and Event Propagation
+
+**Class 6: Advanced DOM Manipulation**
+- Creating and Removing Elements: `createElement`, `appendChild`, `removeChild`
+- Traversing the DOM: Parent, Child, Sibling Relationships
+- Introduction to Web APIs: Fetch API, Local Storage
+
+### Week 3: jQuery
+
+**Class 7: Introduction to jQuery**
+- What is jQuery? Benefits and Drawbacks
+- Setting Up jQuery: CDN, Local Installation
+- Basic jQuery Syntax: Selectors, Events, and Effects
+
+**Class 8: jQuery DOM Manipulation**
+- Selecting Elements with jQuery
+- Manipulating Content and Attributes: `html`, `text`, `attr`, `css`
+- Adding and Removing Elements: `append`, `prepend`, `remove`
+
+**Class 9: jQuery Events and Effects**
+- jQuery Event Methods: `click`, `dblclick`, `hover`, `keydown`, `keyup`
+- Effects: `hide`, `show`, `toggle`, `fadeIn`, `fadeOut`, `slideUp`, `slideDown`
+- Chaining Methods
+
+### Week 4: Review, Projects, and Advanced Topics
+
+**Class 10: Review and Q&A**
+- Review Key Concepts from Fundamentals, DOM, and jQuery
+- Addressing Student Questions and Difficulties
+- Practice Exercises
+
+**Class 11: Mini Project Workshop**
+- Building a Small Interactive Web Page
+- Students Choose Projects (e.g., To-Do List, Simple Game, Interactive Form)
+- Guidance on Project Development
+
+**Class 12: Advanced Topics and Final Project Presentation**
+- Introduction to ES6+ Features: `let`, `const`, Arrow Functions, Template Literals, Destructuring
+- Brief Introduction to Asynchronous JavaScript: Callbacks, Promises, `async/await`
+- Student Project Presentations and Feedback
