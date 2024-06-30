@@ -1,0 +1,70 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: beige;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li{
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: rgb(17, 0, 255);
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+}
+
+#courses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+}
+
+
+#courses ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#service-cards{
+    background-color: white ;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+}
+
+#card{
+    background-color: rgb(122, 148, 172);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#card h3{
+    color: white;
+    font-size: 25px;
+}
+#card button{
+    text-align: center;
+}
