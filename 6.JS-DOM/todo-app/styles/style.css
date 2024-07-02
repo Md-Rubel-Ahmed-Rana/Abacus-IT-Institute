@@ -93,10 +93,14 @@ hr{
     background-color: rgb(73, 8, 73);
     color: white;
     font-size: 20px;
-    
     border-radius: 5px;
     padding: 5px 0px;
     cursor: pointer;
+    border: none;
+}
+
+#form-section form button:hover{
+    background-color: rgb(112, 31, 112);
 }
 /* form section start  */
 
@@ -154,4 +158,36 @@ hr{
 .delete-btn-div button:hover{
     background-color: blue;
     color: white;
+}
+
+
+ /* responsive design  */
+@media only screen and (max-width: 500px) {
+    #todo-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    #form-section form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    main {
+        padding: 10px;
+        padding-bottom: 100px;
+    }
+
+    header nav ul {
+        display: none
+    }
+
+    hr {
+        display: none;
+    }
+
+    header nav h1 {
+        text-align: center;
+    }
 }

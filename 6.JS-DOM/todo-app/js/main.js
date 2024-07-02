@@ -91,7 +91,7 @@ const handleTodoSubmit = (event) => {
     description: description,
     status: false,
   };
-  todos.push(newTodo);
+  todos.unshift(newTodo);
   handleShowTodos();
 
   // clear the form data

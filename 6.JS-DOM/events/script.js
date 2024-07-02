@@ -15,17 +15,21 @@ events.forEach((event) => {
 
   //   event type
   const eventType = document.createElement("p");
-  eventType.innerHTML = event.eventType;
   const typeBold = document.createElement("b");
   typeBold.innerHTML = "Event type: ";
+  const typeSpan = document.createElement("span");
+  typeSpan.innerHTML = event.eventType;
   eventType.appendChild(typeBold);
+  eventType.appendChild(typeSpan);
 
   //   event description
   const eventDesc = document.createElement("p");
-  eventDesc.innerHTML = event.description;
   const descBold = document.createElement("b");
   descBold.innerHTML = "Description: ";
+  const descSpan = document.createElement("span");
+  descSpan.innerHTML = event.description;
   eventDesc.appendChild(descBold);
+  eventDesc.appendChild(descSpan);
 
   // append inner children to card
   eventCard.appendChild(eventName);
