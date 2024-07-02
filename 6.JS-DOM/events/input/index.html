@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Events</title>
+  </head>
+  <body>
+    <main>
+      <section style="text-align: center">
+        <input
+          onblur="handleNameChange(event)"
+          style="padding: 5px 10px; font-size: 20px"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+        />
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+          "
+        >
+          <b>Name: </b>
+          <h4 id="inputted-name"></h4>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

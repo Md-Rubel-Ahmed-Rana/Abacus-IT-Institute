@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JS-DOM Events</title>
+  </head>
+  <body>
+    <header>
+      <h1>Javascript event listeners</h1>
+    </header>
+    <main>
+      <section>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+          onchange="handleChangeUsername(event)"
+        />
+      </section>
+      <section id="event-section">
+        <h2>All Events</h2>
+        <div id="event-container">
+          <div class="event-card">
+            <h4><b>Name:</b> abort</h4>
+            <p><b>Event type:</b> ["UiEvent", "Event"]</p>
+            <p><b>Description:</b> The loading of a media is aborted</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./event-data.js"></script>
+    <script src="./script.js"></script>
+    <script src="./event.js"></script>
+  </body>
+</html>

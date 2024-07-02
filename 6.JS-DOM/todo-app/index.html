@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>My Todo App</h1>
+        <ul>
+          <li>Home</li>
+          <li>Todos</li>
+          <li>Add Todo</li>
+          <li>Login</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="form-section">
+        <form onsubmit="handleTodoSubmit(event)">
+          <input
+            type="text"
+            name="title"
+            id="to-do-title"
+            placeholder="Enter task title"
+            required
+          />
+          <textarea
+            name="description"
+            id="todo-description"
+            placeholder="Enter task description"
+            rows="4"
+            required
+          ></textarea>
+          <button type="submit">Add Task</button>
+        </form>
+      </section>
+      <hr />
+      <section id="todo-section">
+        <h2>Todos</h2>
+        <div id="todo-container">
+          <!-- <div class="todo-card">
+            <h4>Make a video</h4>
+            <p>Make a short video for marketing on Web Development</p>
+            <div>
+              <div class="checkbox">
+                <label for="task-check">Status</label>
+                <input type="checkbox" id="task-check" name="task-check" />
+              </div>
+              <div class="delete-btn">
+                <button>Delete</button>
+              </div>
+            </div>
+          </div>
+          <div class="todo-card">
+            <h4>Design navbar</h4>
+            <p>Design todo app navbar using Bootstrap</p>
+            <div>
+              <div class="checkbox">
+                <label for="task-check">Status</label>
+                <input
+                  type="checkbox"
+                  name=""
+                  id="task-check"
+                  name="task-check"
+                />
+              </div>
+              <div class="delete-btn">
+                <button>Delete</button>
+              </div>
+            </div>
+          </div>
+          <div class="todo-card">
+            <h4>Learn JQuery</h4>
+            <p>
+              Learn JQuery to minimize development time and more productivity
+            </p>
+            <div>
+              <div class="checkbox">
+                <label for="task-check">Status</label>
+                <input
+                  type="checkbox"
+                  name=""
+                  id="task-check"
+                  name="task-check"
+                />
+              </div>
+              <div class="delete-btn">
+                <button>Delete</button>
+              </div>
+            </div>
+          </div>
+          <div class="todo-card">
+            <h4>Explore about JS ES6 feature</h4>
+            <p>Learn about javascript es6 features</p>
+            <div>
+              <div class="checkbox">
+                <label for="task-check">Status</label>
+                <input
+                  type="checkbox"
+                  name=""
+                  id="task-check"
+                  name="task-check"
+                />
+              </div>
+              <div class="delete-btn">
+                <button>Delete</button>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>

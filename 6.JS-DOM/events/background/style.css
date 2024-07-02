@@ -1,0 +1,14 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bgBlue{
+    background-color: blue;
+}
+
+.bgPurple{
+    background-color: purple;
+}

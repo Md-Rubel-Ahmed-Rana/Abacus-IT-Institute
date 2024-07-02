@@ -1,0 +1,157 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* navbar start here  */
+header{
+    background-color: rgb(61, 61, 100);
+    padding: 10px 20px;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+header nav h1{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0%;
+    margin: 0%;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+header nav ul li{
+   padding: 5px 10px;
+   font-size: 20px;
+}
+header nav ul li:hover{
+   background-color: rgb(19, 88, 216);
+   padding: 5px 10px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+/* navbar end here  */
+
+
+main{
+  background-color: rgb(205, 208, 211);
+  padding: 20px;
+  padding-bottom: 200px;
+}
+
+
+hr{
+    height: 5px;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+}
+
+/* form section start  */
+#form-section{
+    padding: 10px;
+}
+
+#form-section form{
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.603);
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#form-section form input, textarea{
+    padding: 10px;
+    border-radius:5px;
+    border: 2px solid  rgb(189, 189, 233);
+    font-size: 16px;
+}
+
+#form-section form input:focus, textarea:focus{
+    border: 2px solid rgb(147, 147, 219);
+    outline: blue
+}
+
+#form-section form button{
+    background-color: rgb(73, 8, 73);
+    color: white;
+    font-size: 20px;
+    
+    border-radius: 5px;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+/* form section start  */
+
+
+/* todo section start  */
+#todo-section h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+#todo-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.todo-card{
+    background-color: rgba(255, 255, 255, 0.74);
+    padding: 30px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.todo-card h4{
+    font-size: 18px;
+    margin: 0%;
+    padding: 0%;
+}
+.todo-card p{
+    font-size: 14px;
+}
+
+.checkbox{
+    display: flex;
+}
+
+.todo-card > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn-div button{
+    background-color: rgb(151, 74, 74);
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.delete-btn-div button:hover{
+    background-color: blue;
+    color: white;
+}
