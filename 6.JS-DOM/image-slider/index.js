@@ -3,23 +3,21 @@ const images = [
   "./images/image2.png",
   "./images/image3.png",
   "./images/image4.png",
+  "./images/image5.png",
+  "./images/image6.png",
+  "./images/image7.png",
 ];
 
 let startFrom = 0;
-// select all the necessary elements
 const currentImageElement = document.getElementById("current-image");
 const totalImageCountElement = document.getElementById("total-image");
 totalImageCountElement.innerHTML = images.length;
 currentImageElement.innerHTML = startFrom + 1;
 
-// step-2
 const imageElement = document.getElementById("image-element");
 const firstImage = images[startFrom];
-// inject first image on img's src attribute
 imageElement.src = firstImage;
 
-// declare functions and check whether the funcs work or not
-// step-1
 const handlePrevImageShow = () => {
   startFrom--;
   if (startFrom < 0) {
