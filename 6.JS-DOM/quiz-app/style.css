@@ -1,0 +1,115 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+#quiz-container{
+    width: 70%;
+    border: 3px solid blue;
+    padding: 20px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.answer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+
+#buttons{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+button{
+    background-color: rgb(93, 18, 163);
+    padding: 10px 40px;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(57, 13, 99);
+}
+
+.disabled-button{
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.disabled-button:hover{
+    background-color: gray;
+}
+
+#score-section{
+    display: flex;
+    justify-content: center;
+    border: 2px solid blue;
+    width: 20%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    display: none;
+}
+
+#score-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;    
+}
+
+#score-container > h2, p{
+    margin: 0%;
+    padding: 0%;
+}
+
+#restart-button{
+    background-color: rgb(93, 18, 163);
+    padding: 10px 40px;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+#score-container > button{
+    background-color: rgb(93, 18, 163);
+    padding: 10px 40px;
+}
+
+#score-container > button:hover{
+    background-color: rgb(57, 13, 99);
+}
+
+#submit-button{
+    display: none;
+}
+
+@media only screen and (max-width: 500px){
+    #score-section {
+        width: 90%;
+    }
+    #quiz-container {
+        width: 95%;
+        border: none;
+        padding: 10px;
+    }
+    #question{
+        font-size: 16px;
+    }
+    .answer-container > div > label{
+        font-size: 14px;
+    }
+}
