@@ -15,25 +15,25 @@
         <div>
           <h2 id="question">What is JavaScript?</h2>
           <div class="answer-container">
-            <div onclick="selectAnswer(event)">
+            <div>
               <input type="radio" name="answer" id="answer1-input" />
               <label id="answer1-label" for="answer1-input"
                 >JavaScript is a database</label
               >
             </div>
-            <div onclick="selectAnswer(event)">
+            <div>
               <input type="radio" name="answer" id="answer2-input" />
               <label id="answer2-label" for="answer2-input"
                 >JavaScript is a server</label
               >
             </div>
-            <div onclick="selectAnswer(event)">
+            <div>
               <input type="radio" name="answer" id="answer3-input" />
               <label id="answer3-label" for="answer3-input">
                 JavaScript is a programming language</label
               >
             </div>
-            <div onclick="selectAnswer(event)">
+            <div>
               <input type="radio" name="answer" id="answer4-input" />
               <label id="answer4-label" for="answer4-input"
                 >JavaScript is a text editor</label
@@ -41,17 +41,9 @@
             </div>
           </div>
           <div id="buttons">
-            <button id="prev-button" onclick="handleBackPrevQuiz()">
-              Prev
-            </button>
-            <button id="next-button" onclick="handleGoNextQuiz()">Next</button>
-            <button
-              class="disabled-button"
-              id="submit-button"
-              onclick="handleSubmitQuiz()"
-            >
-              Submit
-            </button>
+            <button id="prev-button">Prev</button>
+            <button id="next-button">Next</button>
+            <button class="disabled-button" id="submit-button">Submit</button>
           </div>
         </div>
       </section>
@@ -61,12 +53,9 @@
           <p>Total questions: <span id="total-quiz">0</span></p>
           <p>Correct answers: <span id="correct-ans">0</span></p>
           <p>Wrong answers: <span id="wrong-ans">0</span></p>
-          <button onclick="handleRestartQuiz()" id="restart-button">
-            Restart
-          </button>
+          <button id="restart-button">Restart</button>
         </div>
       </section>
     </main>
-    <script src="./main.js"></script>
   </body>
 </html>
