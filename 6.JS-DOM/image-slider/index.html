@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div id="image-container">
+          <img id="image-element" src="" alt="" />
+        </div>
+        <div id="image-count">
+          <p>Image:</p>
+          <p>
+            <span id="current-image">1</span>/<span id="total-image">6</span>
+          </p>
+        </div>
+        <div id="button-container">
+          <button onclick="handlePrevImageShow()">Prev</button>
+          <button onclick="handleNextImageShow()">Next</button>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
