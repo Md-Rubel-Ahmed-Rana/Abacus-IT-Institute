@@ -13,37 +13,39 @@
     <main>
       <section id="quiz-container">
         <div>
-          <h2 id="question">What is JavaScript?</h2>
+          <h2 id="question"></h2>
           <div class="answer-container">
-            <div>
+            <div onclick="handleGetSelectedAnswer(event)">
               <input type="radio" name="answer" id="answer1-input" />
-              <label id="answer1-label" for="answer1-input"
-                >JavaScript is a database</label
-              >
+              <label id="answer1-label" for="answer1-input"></label>
             </div>
-            <div>
+            <div onclick="handleGetSelectedAnswer(event)">
               <input type="radio" name="answer" id="answer2-input" />
-              <label id="answer2-label" for="answer2-input"
-                >JavaScript is a server</label
-              >
+              <label id="answer2-label" for="answer2-input"></label>
             </div>
-            <div>
+            <div onclick="handleGetSelectedAnswer(event)">
               <input type="radio" name="answer" id="answer3-input" />
-              <label id="answer3-label" for="answer3-input">
-                JavaScript is a programming language</label
-              >
+              <label id="answer3-label" for="answer3-input"> </label>
             </div>
-            <div>
+            <div onclick="handleGetSelectedAnswer(event)">
               <input type="radio" name="answer" id="answer4-input" />
-              <label id="answer4-label" for="answer4-input"
-                >JavaScript is a text editor</label
-              >
+              <label id="answer4-label" for="answer4-input"></label>
             </div>
           </div>
           <div id="buttons">
-            <button id="prev-button">Prev</button>
-            <button id="next-button">Next</button>
-            <button class="disabled-button" id="submit-button">Submit</button>
+            <button onclick="handleGoPrevQuestion()" id="prev-button">
+              Prev
+            </button>
+            <button onclick="handleGoNextQuestion()" id="next-button">
+              Next
+            </button>
+            <button
+              onclick="handleSubmit()"
+              class="disabled-button"
+              id="submit-button"
+            >
+              Submit
+            </button>
           </div>
         </div>
       </section>
@@ -57,5 +59,7 @@
         </div>
       </section>
     </main>
+
+    <script src="./main.js"></script>
   </body>
 </html>
