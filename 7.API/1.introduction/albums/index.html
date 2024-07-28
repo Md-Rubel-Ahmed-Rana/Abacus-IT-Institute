@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>API - Albums</title>
+  </head>
+  <body>
+    <header>
+      <h4 class="text-3xl font-semibold text-center">Welcome to Albums API</h4>
+    </header>
+
+    <main>
+      <section>
+        <div class="flex justify-center items-center gap-4 mb-5">
+          <h3 class="text-3xl font-semibold text-center">All Albums</h3>
+          <button
+            id="create-new-post"
+            class="bg-blue-500 py-2 px-5 rounded-md text-white"
+          >
+            Create a post
+          </button>
+          <button
+            id="update-post"
+            class="bg-blue-500 py-2 px-5 rounded-md text-white"
+          >
+            Update post using PUT
+          </button>
+          <button
+            id="update-post-patch"
+            class="bg-blue-500 py-2 px-5 rounded-md text-white"
+          >
+            Update post using PATCH
+          </button>
+          <button
+            id="delete-post"
+            class="bg-blue-500 py-2 px-5 rounded-md text-white"
+          >
+            Delete post
+          </button>
+        </div>
+
+        <div class="grid grid-cols-4 gap-3" id="albums-container"></div>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
